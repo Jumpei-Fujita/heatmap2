@@ -66,4 +66,5 @@ def time_series(df1):
     fig = go.Figure()
     for name in names:
         fig.add_trace(go.Scatter(y=df_all[name],x=df_all.index, name=name))
+    fig.update_layout(width=900, height=400)
     st.plotly_chart(fig)
