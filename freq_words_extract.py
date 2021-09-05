@@ -15,4 +15,4 @@ def get_freq_words(CONTENT, num, col):
     expander = col.expander('頻出単語(件数)')
     for i in range(len(most_c)):
         expander.write(most_c[i][0]+'('+str(most_c[i][1])+')')
-    
+        

@@ -37,7 +37,7 @@ def heatmaps(file):
     unsafe_allow_html=True,
     )
 
-    file = pd.read_csv(file)
+    
     st.dataframe(file)
     
     heat_matrix = get_heat_matrix(file)
